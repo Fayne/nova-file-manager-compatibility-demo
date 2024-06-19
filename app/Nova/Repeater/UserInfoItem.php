@@ -19,7 +19,7 @@ class UserInfoItem extends Repeatable
     {
         return [
             Text::make('Card'),
-            FileManager::make('Image'),
+            FileManager::make('Image')->wrapper('repeater'),
         ];
     }
 }
